@@ -1,11 +1,13 @@
 //Variables
-let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+let dificultad = parseInt(prompt('Decide la dificultad del juego. El numero secreto estará entre 1 y :'))
+let numeroSecreto = Math.floor(Math.random() * dificultad) + 1;
 let numeroUsuario = 0;
 let intentos = 1;
 let maximoIntentos = 5;
+console.log(numeroSecreto);
 
 while (numeroUsuario != numeroSecreto) {
-    numeroUsuario = parseInt(prompt("Me indicas un número entre 1 y 10 por favor:"));
+    numeroUsuario = parseInt(prompt(`Me indicas un número entre 1 y ${dificultad} por favor:`));
 
     console.log(numeroUsuario);
     if (numeroUsuario == numeroSecreto) {
