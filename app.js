@@ -5,7 +5,7 @@ let intentos = 1;
 let maximoIntentos = 5;
 
 while (numeroUsuario != numeroSecreto) {
-    numeroUsuario = prompt("Me indicas un número entre 1 y 10 por favor:");
+    numeroUsuario = parseInt(prompt("Me indicas un número entre 1 y 10 por favor:"));
 
     console.log(numeroUsuario);
     if (numeroUsuario == numeroSecreto) {
